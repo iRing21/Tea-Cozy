@@ -1,0 +1,48 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Header and it's children */
+
+header {
+    height: 69px;
+    width: auto;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+   position: relative;
+   right: 0;
+   text-decoration: underline;
+}
+nav a {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/* Mission and it's children */
+
+#mission {
+    height: 700px;
+}
+
+/* Tea of the Month et ses enfants*/
+
+.monthTeas{
+    width: 300px;
+    height: 210px;
+}
