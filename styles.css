@@ -8,6 +8,23 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: larger;
+}
+
+h3{
+    font-size: large;
+    font-weight: bolder;
+}
+
+h4{
+    font-size: medium;
+}
+
+h5{
+    font-size: small;
+}
+
 /* Header and it's children */
 
 header {
@@ -51,6 +68,10 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Mission and it's children */
@@ -58,7 +79,7 @@ body {
 #mission {
     height: 700px;
     width: 1200px;
-    background: url(media/img-mission-background.webp);
+    background-image: url(media/img-mission-background.webp);
     display: inline-flex;
     align-items: center;
 }
@@ -67,10 +88,88 @@ body {
     width: 1200px;
 }
 
+/* Tea of the Month et ses enfants
+    Divs in rows, then the picture 
+    and caption organized in columns */
 
-/* Tea of the Month et ses enfants*/
+#teaOfTheMonth {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 
-.monthTeas{
+#whatssteeping {
+    width: 1000px;
+    text-align: center;
+}
+
+.monthTeas {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.monthTeas img{
     width: 300px;
-    height: 210px;
+    height: 200px;
+}
+
+.monthTeas h4{
+    margin-top: 10px;
+}
+
+/* Location and it's children, margin between 
+    locID and the boxes is not exactly right..
+    might find desire to fix later idk
+*/
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background: url(media/img-locations-background.webp);
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#locID {
+    background-color: transparent;
+    width: 1200px;
+    height: auto;
+}
+
+.locationBox {
+    width: 300px;
+    height: 250px;
+    opacity: 1;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Address und footer NEED TO FIX FOOTER NOT ALIGNING LEFT */
+
+address {
+    height: 200px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+footer {
+   justify-self: flex-start;
+   text-align: left; 
 }
